@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            var broken = false;
+            function logoChange(type){
+                document.getElementById("ig_logo").src = "../images/logo_ig_" + type + ".png";
+            }
+        </script>
         <meta charset="UTF-8"/>
         <title>NatProDB - UEFS</title>
     </head>
     <body>
-            <img id="logoLMM" src="../images/Logo NatProDB.png"/>
+        <div id="interface">
+            <header id="cabecalho">
+                <img id="logoNatProDB" src="../images/Logo NatProDB.png"/>
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="download.html">Database</a></li>
+                        <li><a href="molecules.html">Molecules</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <section id="corpo">
+                [IMAGEM]
+    
+                <h1>Explore our database</h1>
+    
+                <p>Welcome to NatProDB, a digital database that contains chemical structures that have been extracted from plants of the Brazilian semiarid region. NatProDB allows to visualize the structures, their properties and perform searches in the database.</p>
+    
+                [IMAGEM]
+    
+                <p>NatProDB contains 556 compounds in ready-to-dock, 2D formats. The motivation of constructing NatProDB emerged from the fact that the semiarid region of Brazil is a poorly studied region and lack of depository from natural products. NatProDB was conceived by the Laboratório de Modelagem Molceular and Laboratório de Computação de Alto Desempenho of the State University of Feira de Santana.</p>
+    
+                <img id="logoLMM" src="../images/Logo LMM-LaCAD.png"/>
+    
+            </section>
+            
+            <footer id="rodape">
+                <h4>UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA.</h4>
+                <img src="../images/logo_ig_black.png" id="ig_logo" onmousemove="logoChange('color')" onmouseout="logoChange('black')" width="40"/>
+            </footer>
+        </div>
     </body>
 </html>
-CABEÇALHO{
-    Menu Principal
-    -Home
-    -Database
-    -Molecules
-    -Contact
-}
-
-[IMAGEM]
-
-Explore our database
-
-Welcome to NatProDB, a digital database that contains chemical structures that have been extracted from plants of the Brazilian semiarid region. NatProDB allows to visualize the structures, their properties and perform searches in the database.
-
-[IMAGEM]
-
-NatProDB contains 556 compounds in ready-to-dock, 2D formats. The motivation of constructing NatProDB emerged from the fact that the semiarid region of Brazil is a poorly studied region and lack of depository from natural products. NatProDB was conceived by the Laboratório de Modelagem Molceular and Laboratório de Computação de Alto Desempenho of the State University of Feira de Santana.
-[LOGO (LINK-INSTA) LMM + LOGO (LINK INSTA) LaCAD]
-
-RODAPÉ{
-    UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA.
-    LMM[INSTA LOGO]
-}

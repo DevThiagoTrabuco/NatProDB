@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            var broken = false;
+            function logoChange(type){
+                document.getElementById("ig_logo").src = "../images/logo_ig_" + type + ".png";
+            }
+        </script>
         <meta charset="UTF-8"/>
         <title>NatProDB - Contato</title>
     </head>
     <body>
-        <img id="logoLMM" src="../images/Logo NatProDB.png"/>
+        <div id="interface">
+            <header id="cabecalho">
+                <img id="logoNatProDB" src="../images/Logo NatProDB.png"/>
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="download.html">Database</a></li>
+                        <li><a href="molecules.html">Molecules</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <article id="contato">
+                    <h1>E-mails:</h1>
+                    <h3>General Help Desk:</h3>
+                    lmm@uefs.br
+                    <h3>Main contact</h3>
+                    <p>Dr. Manoelito Coelho dos Santos Junior</p>
+                    <p>Dr. Franco Henrique Andrade Leite</p>
+                </article>
+            </section>
+
+            <aside id="endereco">
+                <h1>Adress</h1>
+                Av. Transnordestina, s/n - Feira de Santana, Novo Horizonte - BA, 44036-900
+            </aside>
+
+            <footer id="rodape">
+                <h4>UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA.</h4>
+                <img src="../images/logo_ig_black.png" id="ig_logo" onmousemove="logoChange('color')" onmouseout="logoChange('black')" width="40"/>
+            </footer>
+        </div>
     </body>
 </html>
-
-CABEÇALHO{
-    Menu Principal
-    -Home
-    -Database
-    -Molecules
-    -Contact
-}
-
-E-mails:
->General Help Desk:
-lmm@uefs.br
-
->Main contact:
-Dr. Manoelito Coelho dos Santos Junior
-Dr. Franco Henrique Andrade Leite
-
-Adress
-Av. Transnordestina, s/n - Feira de Santana, Novo Horizonte - BA, 44036-900
-
-[Google Maps do local]
-
-RODAPÉ{
-    UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA.
-    LMM[INSTA LOGO]
-}

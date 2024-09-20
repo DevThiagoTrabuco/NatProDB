@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            var broken = false;
+            function logoChange(type){
+                document.getElementById("ig_logo").src = "../images/logo_ig_" + type + ".png";
+            }
+        </script>
         <meta charset="UTF-8"/>
         <title>NatProDB - Moléculas</title>
     </head>
     <body>
-        <img id="logoLMM" src="../images/Logo NatProDB.png"/>
+        <div id="interface">
+            <header id="cabecalho">
+                <img id="logoNatProDB" src="../images/Logo NatProDB.png"/>
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="download.html">Database</a></li>
+                        <li><a href="molecules.html">Molecules</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <h1>Browse molecules</h1>
+                <h3>Explore NatProDB to uncover properties and find chemical information from brazilian semiarid region.</h3>
+                <h4>Showing x to y of z items</h4>
+            </section>
+
+            <footer id="rodape">
+                <h4>UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA.</h4>
+                <img src="../images/logo_ig_black.png" id="ig_logo" onmousemove="logoChange('color')" onmouseout="logoChange('black')" width="40"/>
+            </footer>
+        </div>
     </body>
 </html>
-
-CABEÇALHO{
-    Menu Principal
-    -Home
-    -Database
-    -Molecules
-    -Contact
-}
-
-Browse molecules
-Explore NatProDB to uncover properties and find chemical information from brazilian semiarid region.
-
-Showing x to y of z items [NÚMERO DE PÁGINAS]
-
-RODAPÉ{
-    UNIVERSIDADE ESTADUAL DE FEIRA DE SANTANA.
-    LMM[INSTA LOGO]
-}
