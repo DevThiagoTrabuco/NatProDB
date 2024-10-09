@@ -1,26 +1,38 @@
-<html lang="en">
-          <head>
-            <meta charset="utf-8">
-          
-            <title>Html Generated</title>
-            <meta name="description" content="Figma htmlGenerator">
-            <meta name="author" content="htmlGenerator">
-            <link href="https://fonts.googleapis.com/css?family=Pavanam&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function logoChange(type){
+                document.getElementById("ig_logo").src = "../images/logo_ig_" + type + ".png";
+            }
+        </script>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/download.css"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NatProDB - Download</title>
+    </head>
+    <body>
+        <div id="interface" class="header">
+            <a href="index.html"><img id="logoNatProDB" src="../images/Logo NatProDB.png"/></a>
+            <div id="menu" class="header_right">
+                <a href="index.html">Home</a>
+                <a href="download.html">Database</a>
+                <a href="molecules.html">Molecules</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
 
-            <link rel="stylesheet" href="../css/styles_download.css">
+            <section>
+                <p>Download all the compounds in SMI format</p>
+            </section>
+        
             
-            <style>
-              /*
-                Figma Background for illustrative/preview purposes only.
-                You can remove this style tag with no consequence
-              */
-              body {background: #E5E5E5; }
-            </style>
-          
-          </head>
-          
-          <body>
-            <div class=e32_112><span  class="e32_114">Home</span><span  class="e32_115">Database</span><span  class="e32_116">Molecules</span><span  class="e32_117">Contact</span><div  class="e32_118"></div><div  class="e32_122"></div><span  class="e32_125">Universidade Estadual de Feira de Santana</span><span  class="e32_126">Conect with LMM</span><div  class="e32_130"></div><span  class="e32_131">Universidade Estadual de Feira de Santana</span><span  class="e32_132">Conect with LMM</span><div  class="e45_46"></div><span  class="e45_47">Download all the compounds in SMI format </span><div  class="e45_49"></div><div  class="e45_51"></div><div  class="e90_8"></div></div>
-          </body>
-          </html>
+        <div id="rodape" class="footer">          
+            <div id="item"><a href="https://uefs.br/" target="_blank"><img src="../images/logo_UEFS.png" id="uefs_logo" width="60"/></a></div>
+            <div id="item"><p>Universidade Estadual de Feira de Santana</p></div>
+            <div id="item"><p>LMM on Instagram</p></div>
+            <div id="item"><a href="https://www.instagram.com/lmmuefs/" target="_blank"><img  src="../images/logo_ig_black.png" id="ig_logo" onmousemove="logoChange('color')" onmouseout="logoChange('black')" width="60"/></a></div>
+        </div>
+    </body>
+</html>

@@ -1,26 +1,40 @@
-<html lang="en">
-          <head>
-            <meta charset="utf-8">
-          
-            <title>Html Generated</title>
-            <meta name="description" content="Figma htmlGenerator">
-            <meta name="author" content="htmlGenerator">
-            <link href="https://fonts.googleapis.com/css?family=Pavanam&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function logoChange(type){
+                document.getElementById("ig_logo").src = "../images/logo_ig_" + type + ".png";
+            }
+        </script>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/molecules.css"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NatProDB - Moléculas</title>
+    </head>
+    <body>
+        <div id="interface" class="header">
+            <a href="index.html"><img id="logoNatProDB" src="../images/Logo NatProDB.png"/></a>
+            <div id="menu" class="header_right">
+                <a href="index.html">Home</a>
+                <a href="download.html">Database</a>
+                <a href="molecules.html">Molecules</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
 
-            <link rel="stylesheet" href="../css/styles_molecules.css">
-            
-            <style>
-              /*
-                Figma Background for illustrative/preview purposes only.
-                You can remove this style tag with no consequence
-              */
-              body {background: #E5E5E5; }
-            </style>
-          
-          </head>
-          
-          <body>
-            <div class=e57_60><span  class="e57_62">Home</span><span  class="e57_63">Database</span><span  class="e57_64">Molecules</span><span  class="e57_65">Contact</span><div  class="e57_70"></div><span  class="e57_73">Universidade Estadual de Feira de Santana</span><span  class="e57_74">Conect with LMM</span><div  class="e57_78"></div><span  class="e57_79">Universidade Estadual de Feira de Santana</span><span  class="e57_80">Conect with LMM</span><div  class="e57_81"></div><span  class="e60_95">Browse molecules</span><span  class="e60_96">Explore NatProDB to uncover properties and find chemical information from brazilian semiarid region.</span><span  class="e60_97">Showing 1 to 20 of 556 results</span><span  class="e63_99">1</span><span  class="e63_101">2</span><span  class="e63_102">3</span><span  class="e63_103">...</span><span  class="e63_104">20</span><span  class="e63_105">Next</span><div  class="e63_106"></div><div  class="e63_109"></div><div  class="e63_113"></div><div  class="e63_114"></div><div  class="e63_115"></div><div  class="e63_116"></div><div  class="e63_117"></div><div  class="e63_118"></div><div  class="e63_119"></div><div  class="e63_132"></div><div  class="e63_133"></div><div  class="e63_134"></div><div  class="e63_135"></div><div  class="e63_136"></div><div  class="e63_137"></div><div  class="e63_138"></div><div  class="e63_139"></div><div  class="e63_140"></div><div  class="e63_141"></div><div  class="e63_142"></div><div  class="e63_143"></div><span  class="e63_149">1</span><span  class="e63_150">2</span><span  class="e63_151">3</span><span  class="e63_152">...</span><span  class="e63_153">20</span><span  class="e63_154">Next</span><div  class="e63_155"></div><div  class="e90_11"></div></div>
-          </body>
-          </html>
+            <section>
+                <h1>Browse molecules</h1>
+                <h3>Explore NatProDB to uncover properties and find chemical information from brazilian semiarid region.</h3>
+                <h4>Showing x to y of z items</h4>
+            </section>
+
+                        
+        <div id="rodape" class="footer">          
+            <div id="item"><a href="https://uefs.br/" target="_blank"><img src="../images/logo_UEFS.png" id="uefs_logo" width="60"/></a></div>
+            <div id="item"><p>Universidade Estadual de Feira de Santana</p></div>
+            <div id="item"><p>LMM on Instagram</p></div>
+            <div id="item"><a href="https://www.instagram.com/lmmuefs/" target="_blank"><img  src="../images/logo_ig_black.png" id="ig_logo" onmousemove="logoChange('color')" onmouseout="logoChange('black')" width="60"/></a></div>
+        </div>
+    </body>
+</html>
