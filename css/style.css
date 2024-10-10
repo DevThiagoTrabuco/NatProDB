@@ -15,7 +15,8 @@ body{
 img#logoNatProDB{
     float: left;
     margin-top: -25px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-left: 150px;
 }
 .header a{
     float:left;
@@ -25,7 +26,7 @@ img#logoNatProDB{
     text-decoration: none;
     font-size: 15pt;
     margin-top: 50px;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 .header_right{
     float: right;
@@ -50,18 +51,21 @@ img#logoNatProDB{
 }
 .footer div#item{display: inline-block;}
 .footer p{
-    color: #028090;
-    font-size: 12pt;
     position: relative;
     top: -25px;
-    padding: 0px 200px;
+    padding: 0px 300px;
+}
+.footer a{
+    color: #028090;
+    font-size: 12pt;
+    text-decoration: none;
 }
 img#uefs_logo{
     position: relative;
-    left: 200px;
+    left: 300px;
     top: 5px;
 }
 img#ig_logo{
     position: relative;
-    right: 200px;
+    right: 300px;
 }
