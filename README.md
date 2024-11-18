@@ -11,8 +11,7 @@ A concepção do NatProDB é fruto do trabalho colaborativo entre o **Laboratór
 
 Este site permite:
 - **Visualizar estruturas dos compostos.**  
-- **Consultar as propriedades dos compostos.**  
-- **Realizar buscas na base de dados.**
+- **Consultar as propriedades dos compostos.**
 - **Fazer o download da base de dados**
 
 ---
