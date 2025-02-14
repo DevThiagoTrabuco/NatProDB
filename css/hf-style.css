@@ -4,11 +4,10 @@
 
 body{
     margin: 0;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 .header{
-    background-color: white;
     width: 100%;
     height: 185px;
     position: relative;
@@ -27,7 +26,6 @@ body{
 }
 
 .footer{
-    background-color: white;
     width: 100%;
     height: 100px;
     display: flex;
@@ -35,14 +33,15 @@ body{
     justify-content: space-evenly;
 }
 
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+
 .uefs, .lmm{
     display: flex;
     align-items: center;
     border: 1px solid black;
-}
-
-.uefs, .lmm a{
-    padding: 0 20px;
 }
 
 .uefs_logo{
@@ -52,17 +51,32 @@ body{
     left: 20px;
 }
 
+.uefs a{
+    border: 1px solid black;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.lmm a{
+    border: 1px solid black;
+    font-size: 1em;
+    padding: 0;
+    margin: 0 5px;
+}
+
 /*Logo do instagram*/
 .instagram{
     width: 40px;
     height: 40px;
     border: 4px solid #000;
     border-radius: 25%;
+    transition: border 0.5s;
 }
 
 .circle{
     border: 3px solid #000;
     border-radius: 50%;
+    transition: border 0.5s;
 }
 
 .circle.big{
@@ -81,14 +95,26 @@ body{
     left: 24px;
 }
 
-.instagram:hover {
-    border: 5px solid transparent;
+ .instagram:hover{
+    border: 4px solid transparent;
     background: linear-gradient(white, white) padding-box,
                 linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) border-box;
 }
 
 .instagram:hover .circle {
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) border-box;
+}
+
+.link:hover + .ig-logo .instagram{
     border: 4px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) border-box;
+}
+
+.link:hover + .ig-logo .instagram .circle{
+    border: 3px solid transparent;
     background: linear-gradient(white, white) padding-box,
                 linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5) border-box;
 }
